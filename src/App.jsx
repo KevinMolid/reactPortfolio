@@ -1,14 +1,24 @@
-import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from '/src/components/Layout.jsx'
+import IndexPage from './pages/IndexPage'
+import Projects from './pages/Projects'
+import About from './pages/About'
+import Contact from './pages/Contact'
 import './App.css'
 
-// Import components
-import Header from './components/Header'
-
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <Header />
+    <BrowserRouter>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route index element={<IndexPage />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+            </Route>
+        </Routes>
+    </BrowserRouter>
   )
 }
 
