@@ -7,6 +7,10 @@ import hamClosedIcon from '../assets/svg/ham-menu-close.svg'
 function Header(){
   const [hamOn, setHamOn] = useState(false)
 
+  function anchor(dest){
+    window.location.href = `#${dest}`;
+  }
+
   function toggleHam() {
     setHamOn(prevState => !prevState)
   }
@@ -17,19 +21,19 @@ function Header(){
           <div className="header__sm-menu-content">
             <ul className="header__sm-menu-links">
               <li className="header__sm-menu-link">
-                <NavLink href="/"> Home </NavLink>
+                <NavLink to="/"> Home </NavLink>
               </li>
   
               <li className="header__sm-menu-link">
-                <a href="./index.html#about"> About </a>
+                <a href="./#about"> About </a>
               </li>
               
               <li className="header__sm-menu-link">
-                <a href="./index.html#projects"> Projects </a>
+                <a href="./#projects"> Projects </a>
               </li>
   
               <li className="header__sm-menu-link">
-                <a href="./index.html#contact"> Contact </a>
+                <a href="./#contact"> Contact </a>
               </li>
             </ul>
           </div>
@@ -39,49 +43,56 @@ function Header(){
 
     return(
         <header className="header">
-        <div className="header__content">
-          <div className="header__logo-container">
-            <div className="header__logo-img-cont">
-              <img
-                src={avatar}
-                alt="Kevin Molid Logo Image"
-                className="header__logo-img"
-              />
+          <div className="header__content">
+
+            <NavLink to="/" className="header__logo-container">
+                <div className="header__logo-img-cont">
+                  <img
+                    src={avatar}
+                    alt="Kevin Molid logo image"
+                    className="header__logo-img"
+                  />
+                </div>
+                <span className="header__logo-sub">Kevin Molid</span>
+            </NavLink>
+
+            <div className="header__main">
+              <ul className="header__links">
+
+                <li className="header__link-wrapper">
+                  <NavLink to="/" className='header__link'> Home </NavLink>
+                </li>
+
+                <li className="header__link-wrapper">
+                  <a href="/#about" className="header__link">About </a>
+                </li>
+
+                <li className="header__link-wrapper">
+                  <a href="/#projects" className='header__link'> Projects </a>
+                </li>
+
+                <li className="header__link-wrapper">
+                  <a href="./#contact" className="header__link"> Contact </a>
+                </li>
+                
+              </ul>
+              <div className="header__main-ham-menu-cont"
+                onClick={toggleHam}>
+                <img
+                  src={hamIcon}
+                  alt="hamburger menu"
+                  className="header__main-ham-menu"
+                />
+                <img
+                  src={hamClosedIcon}
+                  alt="hamburger menu close"
+                  className="header__main-ham-menu-close d-none"
+                />
+              </div>
             </div>
-            <span className="header__logo-sub">Kevin Molid</span>
           </div>
-          <div className="header__main">
-            <ul className="header__links">
-              <li className="header__link-wrapper">
-                <NavLink to="/" className='header__link'> Home </NavLink>
-              </li>
-              <li className="header__link-wrapper">
-                <NavLink to="/projects" className='header__link'> Projects </NavLink>
-              </li>
-              <li className="header__link-wrapper">
-                <a href="./index.html#about" className="header__link">About </a>
-              </li>
-              <li className="header__link-wrapper">
-                <a href="./index.html#contact" className="header__link"> Contact </a>
-              </li>
-            </ul>
-            <div className="header__main-ham-menu-cont"
-              onClick={toggleHam}>
-              <img
-                src={hamIcon}
-                alt="hamburger menu"
-                className="header__main-ham-menu"
-              />
-              <img
-                src={hamClosedIcon}
-                alt="hamburger menu close"
-                className="header__main-ham-menu-close d-none"
-              />
-            </div>
-          </div>
-        </div>
-        {hamOn && <Ham />}
-      </header>
+          {hamOn && <Ham />}
+        </header>
     )
 }
 
