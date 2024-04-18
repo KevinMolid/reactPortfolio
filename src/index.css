@@ -15,14 +15,6 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 */
 
 * {
-  --n-blue: 0, 118, 155;
-  --blue: rgba(0, 98, 185, 0.8);
-  --red: red;
-  --purple: rgba(143, 162, 255, 0.8);
-  --green: rgba(31, 79, 45, 0.8);
-  --light-green: rgba(101, 146, 74, 0.8);
-  --brown: rgba(129, 104, 8, 0.8);
-  --light-brown: rgba(186, 155, 65, 0.8);
   --main-color:  #284e55;
 }
 *,
