@@ -23,7 +23,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   --light-green: rgba(101, 146, 74, 0.8);
   --brown: rgba(129, 104, 8, 0.8);
   --light-brown: rgba(186, 155, 65, 0.8);
-  --main-color:  var(--n-blue);
+  --main-color:  #284e55;
 }
 *,
 *::after,
@@ -116,7 +116,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: rgba(var(--main-color), 1);
+    background: var(--main-color);
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -168,12 +168,12 @@ textarea {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
   .btn--theme {
-    background: rgba(var(--main-color), 1);
+    background: var(--main-color);
     color: #fff; }
   .btn--theme-inv {
-    color: rgba(var(--main-color), 1);
+    color: var(--main-color);
     background: #fff;
-    border: 2px solid rgba(var(--main-color), 1);
+    border: 2px solid var(--main-color);
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
@@ -383,7 +383,7 @@ font-size: 1.5rem;
 
 .contact {
   background: #222;
-  background-image: url('../assets/img/Write.png');
+  background-image: url('src/assets/contactbg2.png');
   background-size: cover;
   background-position: center; 
 }
@@ -522,7 +522,7 @@ font-size: 1.5rem;
     color: #333;
     transition: color .3s; }
     .header__logo-container:hover {
-      color: rgba(var(--main-color), 1); }
+      color: var(--main-color); }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
@@ -560,7 +560,7 @@ font-size: 1.5rem;
     font-weight: 700;
     transition: color .3s, transform .3s; }
     .header__link:hover {
-      color: rgba(var(--main-color), 1);
+      color: var(--main-color);
       transform: translateY(-5px); }
     @media only screen and (max-width: 56.25em) {
       .header__link {
@@ -606,7 +606,7 @@ font-size: 1.5rem;
     letter-spacing: 2px;
     transition: color .3s; }
     .header__sm-menu-link a:hover {
-      color: rgba(var(--main-color), 1); }
+      color: var(--main-color); }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
