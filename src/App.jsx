@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from '/src/components/Layout.jsx'
+
+// Pages
+import Layout from './components/Layout.jsx'
 import IndexPage from './pages/IndexPage'
 import ProjectSterk from './pages/Sterk'
 import ProjectHabitual from './pages/Habitual'
