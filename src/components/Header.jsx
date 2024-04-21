@@ -21,7 +21,7 @@ function Header(){
           <div className="header__sm-menu-content">
             <ul className="header__sm-menu-links">
               <li className="header__sm-menu-link">
-                <NavLink to="/"> Home </NavLink>
+                <a href="./#hero"> Home </a>
               </li>
   
               <li className="header__sm-menu-link">
@@ -45,7 +45,7 @@ function Header(){
         <header className="header">
           <div className="header__content">
 
-            <NavLink to="/" className="header__logo-container">
+            <a href="./#hero" className="header__logo-container">
                 <div className="header__logo-img-cont">
                   <img
                     src={avatar}
@@ -54,13 +54,13 @@ function Header(){
                   />
                 </div>
                 <span className="header__logo-sub">Kevin Molid</span>
-            </NavLink>
+            </a>
 
             <div className="header__main">
               <ul className="header__links">
 
                 <li className="header__link-wrapper">
-                  <NavLink to="/" className='header__link'> Home </NavLink>
+                  <a href="./#hero" className='header__link'> Home </a>
                 </li>
 
                 <li className="header__link-wrapper">

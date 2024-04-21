@@ -5,7 +5,7 @@ import linkedinIcon from '/src/assets/linkedin-ico.png'
 
 export default function HeroSection(){
     return(
-        <section className="home-hero">
+        <section id="hero" className="home-hero">
             <div className="home-hero__content">
                 <h1 className="heading-primary">Hi, I'm Kevin!</h1>
                 <div className="home-hero__info">
