@@ -97,11 +97,16 @@ export default function ProjectSection(){
                 <div className="projects__row-content">
                     <h3 className="projects__row-content-title">Language Learning Platform</h3>
                     <p className="projects__row-content-desc">
-                    An app that generates random passwords based on a few user inputs, 
-                    e.g. length, types of characters, etc. Built with HTML, CSS, and vanilla JavaScript.
+                    The Language Learning platform is an ongoing project, being created by a small team of 
+                    developers. My role is as a frontend developer and UX designer.
+                    The main objective of the project is learning to work as a team of developers, creating 
+                    a fullstack application. The project is built with Mongo DB, Express, React and Node JS, 
+                    and following a Model-View-Controller architecture. We are currently working on developing 
+                    a full feature chat applicattion, and are planning to implement translation powered by 
+                    the DeepL API.
                     </p>
                     <a
-                    href="./project-3.html"
+                    href="./languageapp"
                     className="btn btn--med btn--theme dynamicBgClr"
                     >Learn more</a
                     >

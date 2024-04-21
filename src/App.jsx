@@ -4,6 +4,8 @@ import IndexPage from './pages/IndexPage'
 import ProjectSterk from './pages/Sterk'
 import ProjectHabitual from './pages/Habitual'
 import ProjectMcLaren from './pages/McLaren'
+import ProjectLanguage from './pages/LanguageApp'
+
 
 import './App.css'
 
@@ -17,6 +19,7 @@ function App() {
               <Route path="/sterk" element={<ProjectSterk />} />
               <Route path="/habitual" element={<ProjectHabitual />} />
               <Route path="/mclaren" element={<ProjectMcLaren />} />
+              <Route path="/languageapp" element={<ProjectLanguage />} />
             </Route>
         </Routes>
     </BrowserRouter>
