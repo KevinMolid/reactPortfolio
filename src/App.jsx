@@ -8,6 +8,8 @@ import ProjectHabitual from './pages/Habitual'
 import ProjectMcLaren from './pages/McLaren'
 import ProjectLanguage from './pages/LanguageApp'
 
+// Functions
+import ScollToTop from './functions/ScrollToTop'
 
 import './App.css'
 
@@ -15,6 +17,7 @@ function App() {
 
   return (
     <BrowserRouter>
+          <ScollToTop />
           <Routes>
             <Route element={<Layout />}>
               <Route index element={<IndexPage />} />
