@@ -78,11 +78,10 @@ export default function ProjectSection(){
                     created using HTML, CSS and Javascript, with a mobile-first approach and with accessibility 
                     in mind.
                     </p>
-                    <a
-                    href="./project-2.html"
+                    <Link
+                    to="./mclaren"
                     className="btn btn--med btn--theme dynamicBgClr"
-                    >Learn more</a
-                    >
+                    >Learn more</Link>
                 </div>
                 </div>
     

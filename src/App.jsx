@@ -3,6 +3,7 @@ import Layout from '/src/components/Layout.jsx'
 import IndexPage from './pages/IndexPage'
 import ProjectSterk from './pages/Sterk'
 import ProjectHabitual from './pages/Habitual'
+import ProjectMcLaren from './pages/McLaren'
 
 import './App.css'
 
@@ -15,7 +16,7 @@ function App() {
               <Route index element={<IndexPage />} />
               <Route path="/sterk" element={<ProjectSterk />} />
               <Route path="/habitual" element={<ProjectHabitual />} />
-
+              <Route path="/mclaren" element={<ProjectMcLaren />} />
             </Route>
         </Routes>
     </BrowserRouter>
