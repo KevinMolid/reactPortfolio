@@ -55,11 +55,10 @@ export default function ProjectSection(){
                     It also features lightmode and darkmode, and utilizes local storage to remember your preferance.
                     Created with Javascript and Firebase.
                     </p>
-                    <a
-                    href="./project-1.html"
+                    <Link
+                    to="habitual"
                     className="btn btn--med btn--theme dynamicBgClr"
-                    >Learn more</a
-                    >
+                    >Learn more</Link>
                 </div>
                 </div>
     
