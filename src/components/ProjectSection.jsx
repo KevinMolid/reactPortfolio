@@ -1,11 +1,12 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 export default function ProjectSection(){
     return (
         <section id="projects" className="projects sec-pad">
             <div className="main-container">
             <h2 className="heading heading-sec heading-sec__mb-bg">
-                <span className="heading-sec__main">Projects</span>
+                <span className="heading-sec__main">My projects</span>
                 <span className="heading-sec__sub">
                 All my projects include links to the code and live version. Click the button to learn more about each one.
                 </span>
@@ -22,6 +23,7 @@ export default function ProjectSection(){
                     loading="lazy"
                     />
                 </div>
+
                 <div className="projects__row-content">
                     <h3 className="projects__row-content-title">Sterk - Fitness Tracker</h3>
                     <p className="projects__row-content-desc">
@@ -29,11 +31,10 @@ export default function ProjectSection(){
                     authentication, a database of exercises and workouts and functions to track and share workouts and 
                     personal records and measure progress over time. It was made using React and Firebase.
                     </p>
-                    <a
-                    href="./project-sterk.html"
+                    <Link
+                    to="sterk"
                     className="btn btn--med btn--theme dynamicBgClr"
-                    >Learn more</a
-                    >
+                    >Learn more</Link>
                 </div>
                 </div>
     
