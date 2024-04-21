@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function ProjectMcLaren(){
+export default function ProjectLanguage(){
     return(
         <main>
             <section class="project-cs-hero languageapp">

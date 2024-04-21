@@ -373,7 +373,7 @@ font-size: 1.5rem;
 
 .contact {
   background: #222;
-  background-image: url('src/assets/contactbg.png');
+  background-image: url('./assets/contactbg.png');
   background-size: cover;
   background-position: center; 
 }

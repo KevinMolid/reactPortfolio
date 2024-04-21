@@ -105,11 +105,10 @@ export default function ProjectSection(){
                     a full feature chat applicattion, and are planning to implement translation powered by 
                     the DeepL API.
                     </p>
-                    <a
-                    href="./languageapp"
+                    <Link
+                    to="./languageapp"
                     className="btn btn--med btn--theme dynamicBgClr"
-                    >Learn more</a
-                    >
+                    >Learn more</Link>
                 </div>
                 </div>
             </div>
