@@ -15,7 +15,7 @@ export default function HeroSection(){
                 </div>
                 <div className="home-hero__cta">
                     <a href="./#contact" className="btn btn--primary btn--bg">Contact me</a>
-                    <a href="./#projects" className="btn btn--bg">See my projects</a>
+                    <a href="./#projects" className="btn btn--bg">My projects</a>
                 </div>
             </div>
             <div className="home-hero__socials">

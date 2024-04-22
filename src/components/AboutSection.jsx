@@ -16,38 +16,47 @@ export default function AboutSection(){
             </h2>
             <div className="about__content">
                 <div className="about__content-main">
-                <h3 className="about__content-title">Get to know me!</h3>
-                <div className="about__content-details">
-                    <p className="about__content-details-para">
-                    I have a background is in Natural Sciences, with a Masters degree in Bioscience 
-                    from the University of Oslo and a Bachelors degree in Chemistry from the 
-                    Norwegian University of Science and Technology.</p>
-    
-                    <p className="about__content-details-para">Through my studies I discovered that I absolutely love the combination of creativity and 
-                    problem solving involved in programming, and I decided to pursue a career in tech!</p>
+                    <h3 className="about__content-title">Get to know me!</h3>
+                    <div className="about__content-details">
+                        <p className="about__content-details-para">
+                        I'm not just a frontend developer, I'm also a very cool guy! As if coding wasn't awesome enough, I'm into crossfit,
+                        running, boxing and bouldering. I also love watching Formula 1 with my girlfriend, and our two dogs!
+                        </p>
+
+                        <p className="about__content-details-para">I started out with a Master’s degree in Bioscience from the 
+                        University of Oslo and a Bachelor’s in Chemistry from the Norwegian University of Science and Technology. 
+                        Although I love science, I discovered my passion for coding and the awesome mix of creativity and problem-solving 
+                        it offers. So, I switched gears, and now I'm looking for my first role in tech!</p>
                     
-                    <p className="about__content-details-para">When I'm not coding, I like to keep myself occupied with boxing, running and bouldering, 
-                    reading books on productivity and lifestyle, and taking care of my two dogs Dag and Sonja.
-                    </p>
+                    </div>
+                    <a href="./#contact" className="btn btn--med btn--theme dynamicBgClr margin-bottom-1"
+                        >Contact me</a>
+
+                    <div className="about__content-skills">
+                        <h3 className="about__content-title">My Skills</h3>
+                        <div className="skills">
+                            <div className="skills__skill">HTML</div>
+                            <div className="skills__skill">CSS</div>
+                            <div className="skills__skill">JavaScript</div>
+                            <div className="skills__skill">React</div>
+                            <div className="skills__skill">Git</div>
+                            <div className="skills__skill">Python</div>
+                            <div className="skills__skill">Firebase</div>
+                            <div className="skills__skill">Figma</div>
+                            <div className="skills__skill">Photoshop</div>
+                        </div>
+                    </div>
                 </div>
-                <a href="./#contact" className="btn btn--med btn--theme dynamicBgClr"
-                    >Contact</a
-                >
+                
+                <div>
+                    <img className="about--img" 
+                        src="src/assets/running.png" 
+                        alt="Kevin participating in Trondheim Marathon 2023" />
+                    <p className="about__content-details-para">
+                    Me running the Trondheim half-marathon 2023
+                        </p>
                 </div>
-                <div className="about__content-skills">
-                <h3 className="about__content-title">My Skills</h3>
-                <div className="skills">
-                    <div className="skills__skill">HTML</div>
-                    <div className="skills__skill">CSS</div>
-                    <div className="skills__skill">JavaScript</div>
-                    <div className="skills__skill">React</div>
-                    <div className="skills__skill">Git</div>
-                    <div className="skills__skill">Python</div>
-                    <div className="skills__skill">Firebase</div>
-                    <div className="skills__skill">Figma</div>
-                    <div className="skills__skill">Photoshop</div>
-                </div>
-                </div>
+
             </div>
             </div>
         </section>

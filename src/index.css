@@ -286,6 +286,9 @@ textarea {
         margin: 0 3px; }
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
+  .about--img {
+    width:100%;
+  }
 
 .projects__row {
   display: grid;
@@ -722,4 +725,8 @@ font-size: 1.5rem;
 .btn--primary {
   color: #fafafa;
   background: var(--main-color);
+}
+
+.margin-bottom-1 {
+  margin-bottom: 3em;
 }
