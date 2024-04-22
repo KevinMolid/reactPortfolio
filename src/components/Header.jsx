@@ -7,10 +7,6 @@ import hamClosedIcon from '../assets/svg/ham-menu-close.svg'
 function Header(){
   const [hamOn, setHamOn] = useState(false)
 
-  function anchor(dest){
-    window.location.href = `#${dest}`;
-  }
-
   function toggleHam() {
     setHamOn(prevState => !prevState)
   }

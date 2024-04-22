@@ -251,6 +251,10 @@ textarea {
     margin: 3rem auto 0 auto;
     max-width: 80rem; }
   .home-hero__cta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
     margin-top: 5rem;
     text-align: center; }
 
@@ -713,3 +717,9 @@ font-size: 1.5rem;
   to {
     opacity: 0;
     top: 27px; } }
+
+/* Utility */
+.btn--primary {
+  color: #fafafa;
+  background: var(--main-color);
+}
