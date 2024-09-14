@@ -13,15 +13,44 @@ export default function ProjectSection(){
             </h2>
     
             <div className="projects__content">
+
+            <div className="projects__row">
+                <div className="projects__row-img-cont">
+                    <Link
+                    to="flashcards"
+                    className="">
+                        <img
+                            src="src/assets/FlashCards.png"
+                            alt="Software Screenshot"
+                            className="projects__row-img transform-zoom"
+                            loading="lazy"/>
+                    </Link>
+                </div>
+
+                <div className="projects__row-content">
+                    <h3 className="projects__row-content-title">FlashCards</h3>
+                    <p className="projects__row-content-desc">
+                    FlashCards is a web application for practicing concepts through repetition.
+                    Created with React.
+                    </p>
+                    <Link
+                    to="flashcards"
+                    className="btn btn--med btn--theme dynamicBgClr"
+                    >Learn more</Link>
+                </div>
+                </div>
     
                 <div className="projects__row">
                 <div className="projects__row-img-cont">
-                    <img
-                    src="src/assets/MockupSterk.png"
-                    alt="Software Screenshot"
-                    className="projects__row-img"
-                    loading="lazy"
-                    />
+                    <Link
+                    to="sterk"
+                    className="">
+                        <img
+                            src="src/assets/MockupSterk.png"
+                            alt="Software Screenshot"
+                            className="projects__row-img transform-zoom"
+                            loading="lazy"/>
+                    </Link>
                 </div>
 
                 <div className="projects__row-content">
@@ -40,12 +69,15 @@ export default function ProjectSection(){
     
                 <div className="projects__row">
                 <div className="projects__row-img-cont">
-                    <img
-                    src="src/assets/habitual-mockup.png"
-                    alt="Software Screenshot"
-                    className="projects__row-img"
-                    loading="lazy"
-                    />
+                    <Link
+                    to="habitual"
+                    className="">
+                        <img
+                        src="src/assets/habitual-mockup.png"
+                        alt="Software Screenshot"
+                        className="projects__row-img transform-zoom"
+                        loading="lazy"/>
+                    </Link>
                 </div>
                 <div className="projects__row-content">
                     <h3 className="projects__row-content-title">Habitual - Habit Tracker</h3>
@@ -64,12 +96,15 @@ export default function ProjectSection(){
     
                 <div className="projects__row">
                 <div className="projects__row-img-cont">
-                    <img
-                    src="src/assets/McLarenMockup.png"
-                    alt="Software Screenshot"
-                    className="projects__row-img"
-                    loading="lazy"
-                    />
+                    <Link
+                    to="./mclaren"
+                    className="">
+                        <img
+                        src="src/assets/McLarenMockup.png"
+                        alt="Software Screenshot"
+                        className="projects__row-img transform-zoom"
+                        loading="lazy"/>
+                    </Link>
                 </div>
                 <div className="projects__row-content">
                     <h3 className="projects__row-content-title">McLaren F1 Fanpage</h3>
@@ -87,12 +122,15 @@ export default function ProjectSection(){
     
                 <div className="projects__row">
                 <div className="projects__row-img-cont">
-                    <img
-                    src="src/assets/MockupChat.png"
-                    alt="Software Screenshot"
-                    className="projects__row-img"
-                    loading="lazy"
-                    />
+                    <Link
+                    to="./languageapp"
+                    className="">
+                        <img
+                        src="src/assets/MockupChat.png"
+                        alt="Software Screenshot"
+                        className="projects__row-img transform-zoom"
+                        loading="lazy"/>
+                    </Link>
                 </div>
                 <div className="projects__row-content">
                     <h3 className="projects__row-content-title">Language Learning Platform</h3>
