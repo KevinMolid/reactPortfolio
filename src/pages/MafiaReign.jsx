@@ -1,18 +1,18 @@
 import React from "react"
 
-export default function ProjectFlashCards(){
+export default function ProjectMafiaReign(){
     return(
         <main>
-            <section className="project-cs-hero flashcards">
+            <section className="project-cs-hero mafiareign">
                 <div className="project-cs-hero__content">
-                    <h1 className="heading-primary">FlashCards</h1>
+                    <h1 className="heading-primary">Mafia Reign</h1>
                     <div className="project-cs-hero__info">
                     <p className="text-primary">
                         FlashCards is a web application for practicing concepts through repetition.
                     </p>
                     </div>
                     <div className="project-cs-hero__cta">
-                    <a href="https://km-habitual.netlify.app/" className="btn btn--bg" target="_blank">Live Link</a>
+                    <a href="https://mafiareign.netlify.app/" className="btn btn--bg" target="_blank">Live Link</a>
                     </div>
                 </div>
             </section>
@@ -21,7 +21,7 @@ export default function ProjectFlashCards(){
                     <div className="project-details__content">
                     <div className="project-details__showcase-img-cont">
                         <img
-                        src="src/assets/flashcards.png"
+                        src="src/assets/MafiaReign.jpg"
                         alt="Project Image"
                         className="project-details__showcase-img"
                         />
@@ -30,14 +30,21 @@ export default function ProjectFlashCards(){
                         <div className="project-details__desc">
                         <h3 className="project-details__content-title">Project Overview</h3>
                         <p className="project-details__desc-para">
-                            FlashCards is a web application for practicing concepts through repetition.
-                        </p>
+                        Mafia Reign is a thrilling multiplayer strategy game where you build your 
+                        criminal empire in the shadows of five major cities.</p>
+
+                        <p className="project-details__desc-para">You are a rising force in a world of 
+                            crime, corruption, and cutthroat competition. Build your mafia family, earn your fortune, and gain influence in cities like New York and Tokyo. But in a game where every choice matters, remember: there’s always someone more powerful in the shadows. How far will you go to reign supreme?</p>
+
+                        <p className="project-details__desc-para">Rise through the ranks, form alliances, 
+                            and challenge rival families for dominance.</p>
+                        
                         </div>
                         <div className="project-details__tools-used">
                         <h3 className="project-details__content-title">Tools Used</h3>
                         <div className="skills">
                             <div className="skills__skill">HTML</div>
-                            <div className="skills__skill">CSS</div>
+                            <div className="skills__skill">Tailwind CSS</div>
                             <div className="skills__skill">JavaScript</div>
                             <div className="skills__skill">React</div>
                             <div className="skills__skill">Firebase</div>
@@ -47,13 +54,13 @@ export default function ProjectFlashCards(){
                         <div className="project-details__links">
                         <h3 className="project-details__content-title">See Live</h3>
                         <a
-                            href="https://km-habitual.netlify.app/"
+                            href="https://mafiareign.netlify.app/"
                             className="btn btn--med btn--theme project-details__links-btn"
                             target="_blank"
                             >Live Link</a
                         >
                         <a
-                            href="https://github.com/KevinMolid/HabitTracker"
+                            href="https://github.com/KevinMolid/mafiaGame"
                             className="btn btn--med btn--theme-inv project-details__links-btn"
                             target="_blank"
                             >Code Link</a

@@ -17,10 +17,10 @@ export default function ProjectSection(){
             <div className="projects__row">
                 <div className="projects__row-img-cont">
                     <Link
-                    to="flashcards"
+                    to="mafiareign"
                     className="">
                         <img
-                            src="src/assets/FlashCards.png"
+                            src="src/assets/MafiaReign.jpg"
                             alt="Software Screenshot"
                             className="projects__row-img transform-zoom"
                             loading="lazy"/>
@@ -28,13 +28,13 @@ export default function ProjectSection(){
                 </div>
 
                 <div className="projects__row-content">
-                    <h3 className="projects__row-content-title">FlashCards</h3>
+                    <h3 className="projects__row-content-title">MafiaReign</h3>
                     <p className="projects__row-content-desc">
-                    FlashCards is a web application for practicing concepts through repetition.
-                    Created with React.
+                    Mafia Reign is a thrilling multiplayer strategy game where you build your criminal empire in the shadows of five major cities. 
                     </p>
+                    <p className="projects__row-content-desc">The game is buildt in React and features live chat, a functioning ranking system etc...</p>
                     <Link
-                    to="flashcards"
+                    to="mafiareign"
                     className="btn btn--med btn--theme dynamicBgClr"
                     >Learn more</Link>
                 </div>
