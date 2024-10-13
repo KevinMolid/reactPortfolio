@@ -21,7 +21,7 @@ export default function ProjectMafiaReign(){
                     <div className="project-details__content">
                     <div className="project-details__showcase-img-cont">
                         <img
-                        src="src/assets/MafiaReign.jpg"
+                        src="src/assets/MafiaReign.png"
                         alt="Project Image"
                         className="project-details__showcase-img"
                         />

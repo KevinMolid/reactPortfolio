@@ -20,7 +20,7 @@ export default function ProjectSection(){
                     to="mafiareign"
                     className="">
                         <img
-                            src="src/assets/MafiaReign.jpg"
+                            src="src/assets/MafiaReign.png"
                             alt="Software Screenshot"
                             className="projects__row-img transform-zoom"
                             loading="lazy"/>
