@@ -46,7 +46,7 @@ export default function ProjectSection(){
                     to="sterk"
                     className="">
                         <img
-                            src="src/assets/MockupSterk.png"
+                            src="/assets/MockupSterk.png"
                             alt="Software Screenshot"
                             className="projects__row-img transform-zoom"
                             loading="lazy"/>
@@ -73,7 +73,7 @@ export default function ProjectSection(){
                     to="habitual"
                     className="">
                         <img
-                        src="src/assets/habitual-mockup.png"
+                        src="/assets/habitual-mockup.png"
                         alt="Software Screenshot"
                         className="projects__row-img transform-zoom"
                         loading="lazy"/>
@@ -100,7 +100,7 @@ export default function ProjectSection(){
                     to="./mclaren"
                     className="">
                         <img
-                        src="src/assets/McLarenMockup.png"
+                        src="/assets/McLarenMockup.png"
                         alt="Software Screenshot"
                         className="projects__row-img transform-zoom"
                         loading="lazy"/>
@@ -126,7 +126,7 @@ export default function ProjectSection(){
                     to="./languageapp"
                     className="">
                         <img
-                        src="src/assets/MockupChat.png"
+                        src="/assets/MockupChat.png"
                         alt="Software Screenshot"
                         className="projects__row-img transform-zoom"
                         loading="lazy"/>

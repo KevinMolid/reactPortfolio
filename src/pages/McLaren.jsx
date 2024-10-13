@@ -23,7 +23,7 @@ export default function ProjectMcLaren(){
                     <div className="project-details__content">
                     <div className="project-details__showcase-img-cont">
                         <img
-                        src="src/assets/McLarenMockup.png"
+                        src="/assets/McLarenMockup.png"
                         alt="Project Image"
                         className="project-details__showcase-img"
                         />

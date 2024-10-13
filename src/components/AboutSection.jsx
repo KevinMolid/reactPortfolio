@@ -50,7 +50,7 @@ export default function AboutSection(){
                 
                 <div>
                     <img className="about--img" 
-                        src="src/assets/running.png" 
+                        src="/assets/running.png" 
                         alt="Kevin participating in Trondheim Marathon 2023" />
                     <p className="about__content-details-para">
                     Me running the Trondheim half-marathon 2023

@@ -22,7 +22,7 @@ export default function ProjectLanguage(){
                     <div className="project-details__content">
                     <div className="project-details__showcase-img-cont">
                         <img
-                        src="src/assets/MockupChat.png"
+                        src="/assets/MockupChat.png"
                         alt="Project Image"
                         className="project-details__showcase-img"
                         />
