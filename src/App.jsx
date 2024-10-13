@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // Pages
 import Layout from './components/Layout.jsx'
 import IndexPage from './pages/IndexPage'
-import ProjectMafiaReign from './pages/MafiaReign.jsx'
+import ProjectMafiaReign from './pages/MafiaReign'
 import ProjectSterk from './pages/Sterk'
 import ProjectHabitual from './pages/Habitual'
 import ProjectMcLaren from './pages/McLaren'
