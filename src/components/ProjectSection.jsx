@@ -20,7 +20,7 @@ export default function ProjectSection(){
                     to="densistedon"
                     className="">
                         <img
-                            src="public/assets/MafiaMockup.png"
+                            src="/assets/MafiaMockup.png"
                             alt="Software Screenshot"
                             className="projects__row-img transform-zoom"
                             loading="lazy"/>

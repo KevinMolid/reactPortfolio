@@ -21,7 +21,7 @@ export default function ProjectDenSisteDon(){
                     <div className="project-details__content">
                     <div className="project-details__showcase-img-cont">
                         <img
-                        src="public/assets/MafiaMockup.png"
+                        src="/assets/MafiaMockup.png"
                         alt="Project Image"
                         className="project-details__showcase-img"
                         />
