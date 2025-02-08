@@ -17,10 +17,10 @@ export default function ProjectSection(){
             <div className="projects__row">
                 <div className="projects__row-img-cont">
                     <Link
-                    to="mafiareign"
+                    to="densistedon"
                     className="">
                         <img
-                            src="/assets/MafiaReign.png"
+                            src="public/assets/MafiaMockup.png"
                             alt="Software Screenshot"
                             className="projects__row-img transform-zoom"
                             loading="lazy"/>
@@ -28,13 +28,13 @@ export default function ProjectSection(){
                 </div>
 
                 <div className="projects__row-content">
-                    <h3 className="projects__row-content-title">MafiaReign</h3>
+                    <h3 className="projects__row-content-title">Den Siste Don</h3>
                     <p className="projects__row-content-desc">
-                    Mafia Reign is a thrilling multiplayer strategy game where you build your criminal empire in the shadows of five major cities. 
+                    Den Siste Don is a thrilling multiplayer mafia game where you build your criminal empire in the shadows of five major cities. 
                     </p>
                     <p className="projects__row-content-desc">The game is buildt in React and features live chat, a functioning ranking system etc...</p>
                     <Link
-                    to="mafiareign"
+                    to="densistedon"
                     className="btn btn--med btn--theme dynamicBgClr"
                     >Learn more</Link>
                 </div>

@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout.jsx'
 import IndexPage from './pages/IndexPage'
 import ProjectMafiaReign from './pages/MafiaReign'
+import ProjectDenSisteDon
+ from './pages/DenSisteDon.jsx'
 import ProjectSterk from './pages/Sterk'
 import ProjectHabitual from './pages/Habitual'
 import ProjectMcLaren from './pages/McLaren'
@@ -20,7 +22,7 @@ function App() {
           <Routes>
             <Route element={<Layout />}>
               <Route index element={<IndexPage />} />
-              <Route path="/mafiareign" element={<ProjectMafiaReign />} />
+              <Route path="/densistedon" element={<ProjectDenSisteDon />} />
               <Route path="/sterk" element={<ProjectSterk />} />
               <Route path="/habitual" element={<ProjectHabitual />} />
               <Route path="/mclaren" element={<ProjectMcLaren />} />
