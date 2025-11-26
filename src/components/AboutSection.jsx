@@ -1,64 +1,111 @@
-import React from "react"
+import React, { useState } from "react"
 
-export default function AboutSection(){
-    return (
-        <section id="about" className="about sec-pad">
-            <div className="main-container">
-            <h2 className="heading heading-sec heading-sec__mb-med">
-                <span className="heading-sec__main">About Me</span>
-                <span className="heading-sec__sub">
-                <p>I'm a frontend developer based in Trondheim, Norway. 
-                    
-                    I love building apps that are both 
-                    visualy and functionaly pleasing, and that solves real-world problems.
-                </p>
-                </span>
-            </h2>
-            <div className="about__content">
-                <div className="about__content-main">
-                    <h3 className="about__content-title">Get to know me!</h3>
-                    <div className="about__content-details">
-                        <p className="about__content-details-para">
-                        I'm not just a frontend developer, I'm also a very cool guy! As if coding wasn't awesome enough, I'm into crossfit,
-                        running, boxing and bouldering. I also love watching Formula 1 with my girlfriend, and our two dogs!
-                        </p>
+const philosophySlides = [
+  {
+    id: 1,
+    text: "Simple products are easier for everyone to use.",
+  },
+  {
+    id: 2,
+    text: "When the interface is clear, people don’t need instructions. They just understand it.",
+  },
+  {
+    id: 3,
+    text: "Less noise means more focus. Important actions stand out.",
+  },
+  {
+    id: 4,
+    text: "Design should guide the user, not get in their way.",
+  },
+  {
+    id: 5,
+    text: "My job isn’t to decorate. It’s to remove friction.",
+  },
+  {
+    id: 6,
+    text: "Simplicity isn’t emptiness. It’s clarity.",
+  },
+];
 
-                        <p className="about__content-details-para">I started out with a Master’s degree in Bioscience from the 
-                        University of Oslo and a Bachelor’s in Chemistry from the Norwegian University of Science and Technology. 
-                        Although I love science, I discovered my passion for coding and the awesome mix of creativity and problem-solving 
-                        it offers. So, I switched gears, and now I'm looking for my first role in tech!</p>
-                    
-                    </div>
-                    <a href="./#contact" className="btn btn--med btn--theme dynamicBgClr margin-bottom-1"
-                        >Contact me</a>
+export default function AboutSection() {
+  const [activeIndex, setActiveIndex] = useState(0);
 
-                    <div className="about__content-skills">
-                        <h3 className="about__content-title">My Skills</h3>
-                        <div className="skills">
-                            <div className="skills__skill">HTML</div>
-                            <div className="skills__skill">CSS</div>
-                            <div className="skills__skill">JavaScript</div>
-                            <div className="skills__skill">React</div>
-                            <div className="skills__skill">Git</div>
-                            <div className="skills__skill">Python</div>
-                            <div className="skills__skill">Firebase</div>
-                            <div className="skills__skill">Figma</div>
-                            <div className="skills__skill">Photoshop</div>
-                        </div>
-                    </div>
+  const handlePrev = () => {
+    setActiveIndex((prev) =>
+      prev === 0 ? philosophySlides.length - 1 : prev - 1
+    );
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prev) =>
+      prev === philosophySlides.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  return (
+    <section id="about" className="about sec-pad">
+      <div className="main-container">
+        <h2 className="heading heading-sec heading-sec__mb-med">
+          <span className="heading-sec__main">My design philosophy</span>
+          <span className="heading-sec__sub">
+            I design clear and simple interfaces that let users focus on <br />
+            what they came to do. Nothing more, nothing less.
+          </span>
+        </h2>
+        <div className="about__content">
+          <div className="about__content-main">
+            <div className="about__content-details">
+              <div
+                className="philosophy-carousel"
+                role="region"
+                aria-roledescription="carousel"
+                aria-label="Design philosophy statements"
+              >
+                <div className="philosophy-carousel__slide">
+                  <p className="about__content-details-para">
+                    {philosophySlides[activeIndex].text}
+                  </p>
                 </div>
-                
-                <div>
-                    <img className="about--img" 
-                        src="/assets/running.png" 
-                        alt="Kevin participating in Trondheim Marathon 2023" />
-                    <p className="about__content-details-para">
-                    Me running the Trondheim half-marathon 2023
-                        </p>
+
+                <div className="philosophy-carousel__controls">
+                  <button
+                    type="button"
+                    className="philosophy-carousel__arrow philosophy-carousel__arrow--prev"
+                    onClick={handlePrev}
+                    aria-label="Previous philosophy statement"
+                  >
+                    <i className="fa-solid fa-angle-left"></i>
+                  </button>
+                  <button
+                    type="button"
+                    className="philosophy-carousel__arrow philosophy-carousel__arrow--next"
+                    onClick={handleNext}
+                    aria-label="Next philosophy statement"
+                  >
+                    <i className="fa-solid fa-angle-right"></i>
+                  </button>
                 </div>
 
+                <div className="philosophy-carousel__dots" aria-hidden="true">
+                  {philosophySlides.map((slide, index) => (
+                    <button
+                      key={slide.id}
+                      type="button"
+                      className={
+                        "philosophy-carousel__dot" +
+                        (index === activeIndex
+                          ? " philosophy-carousel__dot--active"
+                          : "")
+                      }
+                      onClick={() => setActiveIndex(index)}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
-            </div>
-        </section>
-    )
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

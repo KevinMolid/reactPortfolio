@@ -1,24 +1,7 @@
-/*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
-
-*/
-
 * {
   --main-color:  #284e55;
-  --main-color: #f5235c;
+  --main-color: #0a8ae0;
 }
-*,
 *::after,
 *::before {
   margin: 0;
@@ -91,7 +74,6 @@ textarea {
 .heading-sec__main {
   display: block;
   font-size: 5rem;
-  text-transform: uppercase;
   text-align: center;
   margin-bottom: 3.5rem;
   position: relative; }
@@ -260,14 +242,8 @@ textarea {
 
 .about {
   background: #fafafa; }
-  .about__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem; }
     @media only screen and (max-width: 56.25em) {
-      .about__content {
-        grid-template-columns: 1fr;
-        grid-gap: 8rem; } }
+ }
     .about__content-title {
       font-weight: 700;
       font-size: 2.8rem;
@@ -741,4 +717,82 @@ font-size: 1.5rem;
 
 .transform-zoom:hover {
   transform: scale(1.05, 1.05);
+}
+
+/* Philosophy carousel */
+.philosophy-carousel {
+  display: flex;
+  height: 120px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.philosophy-carousel__slide p {
+  height: 100%;
+  min-height: 100px;
+  display: flex;
+  margin: 0;
+  font-size: rem;
+}
+
+.philosophy-carousel__controls {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.philosophy-carousel__arrow {
+  border: none;
+  background: #eee;
+  color: #999;
+  font-size: 2.5rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 22px;
+}
+
+.philosophy-carousel__arrow:hover {
+  background: #ddd;
+  color: #555;
+}
+
+
+.philosophy-carousel__dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.philosophy-carousel__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 9px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.philosophy-carousel__dot:hover {
+    background: #ccc;
+}
+
+.philosophy-carousel__dot--active {
+  background: var(--main-color);
+}
+
+.philosophy-carousel__dot--active:hover {
+  background: var(--main-color);
 }
